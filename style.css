@@ -105,6 +105,17 @@ nav#navigation ul.navlist li{
         text-align: center;
         float: none !important;
     }
+
+    .logo{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        float: none !important;
+    }
+
+    .logo img{
+        width: 100%;
+    }
 }
 
 nav#navigation ul.navlist li:hover{
