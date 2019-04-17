@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> 
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -16,42 +17,53 @@
             <div class="topbar"></div>
             <div class="logo-and-text">
                 <div class="container">
-                    <a href="/" class="logo">
-                        <img src="images/sceau.jpeg" alt="">
-                    </a>
-                    <div class="text">
-                        <span class="text-pri">Ambassade du Rwanda</span>
-                        <span class="text-sec">à Paris</span>
-                    </div>
-                    <div class="social">
-                        <a href="http://www.facebook.com/ambarwandaparis">
-                            <span><i class="fab fa-facebook"></i></span>
-                        </a>
-                        <a href="https://twitter.com/@ambarwandaparis">
-                            <span><i class="fab fa-twitter-square"></i></span>
-                        </a>
-                        <a href="http://www.flickr.com/photos/httpwwwambarwanda-parisfr/sets/">
-                            <span><i class="fab fa-flickr"></i></span>
-                        </a>
-                        <a href="http://www.youtube.com/user/AmbaRwandaFr?feature=watch">
-                            <span><i class="fab fa-youtube"></i></span>
-                        </a>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <a href="/" class="logo">
+                                <img src="images/sceau.jpeg" alt="">
+                            </a>
+                            <div class="text">
+                                <span class="text-pri">Ambassade du Rwanda</span>
+                                <span class="text-sec">à Paris</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="social float-right">
+                                <a href="http://www.facebook.com/ambarwandaparis" target="_blank">
+                                    <span><i class="fab fa-facebook"></i></span>
+                                </a>
+                                <a href="https://twitter.com/@ambarwandaparis" target="_blank">
+                                    <span><i class="fab fa-twitter-square"></i></span>
+                                </a>
+                                <a href="http://www.flickr.com/photos/httpwwwambarwanda-parisfr/sets/" target="_blank">
+                                    <span><i class="fab fa-flickr"></i></span>
+                                </a>
+                                <a href="http://www.youtube.com/user/AmbaRwandaFr?feature=watch" target="_blank">
+                                    <span><i class="fab fa-youtube"></i></span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <nav id="navigation">
+            <nav class="navbar navbar-expand-lg" id="navigation">
                 <div class="container">
-                    <ul class="navlist">
-                        <li>Accueil</li>
-                        <li>Ambassade</li>
-                        <li>Services</li>
-                        <li>Le Rwanda</li>
-                        <li>Investir au Rwanda</li>
-                        <li>Tourisme</li>
-                        <li>News</li>
-                        <li>Liens & Contacts</li>
-                        <li>Communiqués</li>
-                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="navlist navbar-nav">
+                            <li class="nav-item">Accueil</li>
+                            <li class="nav-item">Ambassade</li>
+                            <li class="nav-item">Services</li>
+                            <li class="nav-item">Le Rwanda</li>
+                            <li class="nav-item">Investir au Rwanda</li>
+                            <li class="nav-item">Tourisme</li>
+                            <li class="nav-item">News</li>
+                            <li class="nav-item">Liens & Contacts</li>
+                            <li class="nav-item">Communiqués</li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -59,7 +71,7 @@
             <div class="container">
                 <!-- slider -->
                 <div class="row">
-                    <div class="col-md-8">
+                    <div id="content" class="col-md-8 col-sm-12 col-lg-8">
                         <div id="slideshow"  class="owl-carousel">
                             <div class="slide">
                                 <img src="images/image1.jpeg" alt="">
@@ -68,21 +80,6 @@
                                 <img src="images/image2.jpeg" alt="">
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="president">
-                            <img src="http://www.ambarwanda-paris.fr/pdf/presidentkagame_officiel.JPG" alt="" class="img-fluid">
-                            <div class="title">
-                                <p>S.E.M. Paul Kagame</p>
-                                <p>Président du Rwanda</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="row">
-                    <div class="col-sm-8">
                         <div id="message">
                             <h4 class="header">Message de l'Ambassadeur</h4>
                             <div class="content">
@@ -96,30 +93,40 @@
                             </div>
                         </div>
                         <div id="gallery">
-                            <div class="title">Gallery</div>
-                            <div class="image">
-                                <img src="images/ambassadeur01_260816.JPG" alt="">
+                            <p class="title">Gallery</p>
+                            <div class="holder">
+                                <div class="row">
+                                    <div class="image col-md-6 col-sm-12 col-lg-6">
+                                        <img src="images/ambassadeur01_260816.JPG" alt="">
+                                    </div>
+                                    <div class="image col-md-6 col-sm-12 col-lg-6">
+                                        <img src="images/ambassadeur03_260816.JPG" alt="">
+                                    </div>
+                                    <div class="image col-md-6 col-sm-12 col-lg-6">
+                                        <img src="images/ambassadeur05_260816.JPG" alt="">
+                                    </div>
+                                    <div class="image col-md-6 col-sm-12 col-lg-6">
+                                        <img src="images/ambassadeur_260816.JPG" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="image">
-                                <img src="images/ambassadeur03_260816.JPG" alt="">
-                            </div>
-                            <div class="image">
-                                <img src="images/ambassadeur05_260816.JPG" alt="">
-                            </div>
-                            <div class="image">
-                                <img src="images/ambassadeur_260816.JPG" alt="">
-                            </div>
-                            <div class="clear"></div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+
+                    <div id="sidebar" class="col-md-4 col-sm-12 col-lg-4">
+                        <div class="president">
+                            <img src="http://www.ambarwanda-paris.fr/pdf/presidentkagame_officiel.JPG" alt="" class="img-fluid">
+                            <div class="title">
+                                <p>S.E.M. Paul Kagame</p>
+                                <p>Président du Rwanda</p>
+                            </div>
+                        </div>
                         <div class="widget">
                             <div class="widget-title">
                                 <span>Président Paul Kagame - Shyira 4/07</span>
                             </div>
                             <iframe src="https://www.youtube.com/embed/H5G7YME9JE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-
                         <div class="widget">
                             <div class="widget-title">
                                 <span>Allocution de l'Ambassadeur J. Kabale</span>
