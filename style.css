@@ -176,7 +176,7 @@ nav#navigation ul.navlist li:hover{
 
 .president{
     position: relative;
-    margin-top: 10px;
+    margin: 10px 0;
     height: 411px;
     overflow: hidden;
 }
